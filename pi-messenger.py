@@ -7,8 +7,8 @@ from time import sleep
 # 1: Shared line (ground/physical pin 39)
 # 2: Button 3 (GPIO 26/physical pin 37)
 # 3: Button 4 (GPIO 19/physical pin 35)
-# 5: Button 2 (GPIO 6/physical pin 31)
 # 4: Button 1 (GPIO 13/physical pin 33)
+# 5: Button 2 (GPIO 6/physical pin 31)
 # If you wish to use different controls, change the following part part
 
 # Configure GPIO pins
