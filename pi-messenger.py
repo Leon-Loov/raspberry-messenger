@@ -1,5 +1,5 @@
 from gpiozero import Button
-from time import sleep
+from signal import pause
 
 # I'm using a 4-button keyboard with a shared power line, resulting in 5 total connections.
 # Since I just plugged it straight into the 40-pin header I will use GPIO pins 6, 13, and 19 and 26; they're conviniently placed in a row next to a ground pin.
@@ -23,5 +23,5 @@ button2.when_pressed = lambda: print("Button 2 pressed")
 button3.when_pressed = lambda: print("Button 3 pressed")
 button4.when_pressed = lambda: print("Button 4 pressed")
 
-# Wait for input
-sleep(60)
+# Wait for button presses
+pause()
